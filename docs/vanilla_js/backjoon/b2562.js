@@ -1,3 +1,6 @@
+// const fs = require("fs");
+// const inputData = fs.readFileSync("/dev/stdin").toString().split(" ");
+
 // 문제
 // 9개의 서로 다른 자연수가 주어질 때, 이들 중 최댓값을 찾고 그 최댓값이 몇 번째 수인지를 구하는 프로그램을 작성하시오.
 
@@ -13,43 +16,11 @@
 // 출력
 // 첫째 줄에 최댓값을 출력하고, 둘째 줄에 최댓값이 몇 번째 수인지를 출력한다.
 
-// const fs = require("fs");
-// const input = fs.readFileSync("/dev/stdin").toString().trim().split(" ");
+const fs = require("fs");
 
-// let max = input[0];
-// let maxIdx = 0;
-
-// for (let i = 1; i < 9; i++) {
-//   if (max < input[i]) {
-//     max = input[i];
-//     maxIdx = i;
-//   }
-// }
-
-// console.log(max);
-// console.log(maxIdx + 1);
-
-// const nums = require("fs")
-//   .readFileSync("/dev/stdin")
-//   .toString()
-//   .split("\n")
-//   .map(Number);
-// let max = nums[0];
-// let count = 0;
-// for (let i = 1; i < 9; i++) {
-//   if (nums[i] > max) {
-//     max = nums[i];
-//     count = i;
-//   }
-// }
-// console.log(max);
-// console.log(count + 1);
-
-const input = require("fs")
-  .readFileSync("/dev/stdin")
-  .toString()
-  .split("\n")
-  .map(Number);
+const filepath =
+  process.platform === "linux" ? "/dev/stdin" : "docs/vanilla_js/input.txt";
+let input = fs.readFileSync(filepath).toString().split("\n").map(Number);
 
 let max = input[0];
 let maxIdx = 0;

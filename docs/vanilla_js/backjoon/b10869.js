@@ -1,3 +1,6 @@
+// const fs = require("fs");
+// const inputData = fs.readFileSync("/dev/stdin").toString().split(" ");
+
 const fs = require("fs");
 
 const filepath =

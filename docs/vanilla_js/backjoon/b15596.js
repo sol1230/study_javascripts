@@ -1,3 +1,6 @@
+// const fs = require("fs");
+// const inputData = fs.readFileSync("/dev/stdin").toString().split(" ");
+
 // 문제
 // 정수 n개가 주어졌을 때, n개의 합을 구하는 함수를 작성하시오.
 

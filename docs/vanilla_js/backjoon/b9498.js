@@ -1,3 +1,6 @@
+// const fs = require("fs");
+// const inputData = fs.readFileSync("/dev/stdin").toString().split(" ");
+
 // 9498
 // if (100 >= a && a > 89) {
 //   console.log("A");
