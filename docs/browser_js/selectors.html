@@ -9,11 +9,48 @@
   <body>
     <h3>selectors</h3>
     <h3 id="selector">selector with id</h3>
+    <!--selector : element name, id, class -->
+
+    <p id="title">DOM</p>
+    <button id="btn">Click Me</button>
+    <ul class="list">
+      <li class="item">Apple</li>
+      <li class="item">Azue</li>
+      <li class="item">Samsung</li>
+      <li class="item">IBM</li>
+    </ul>
+    <ul class="list">
+      <li class="item">Banana</li>
+      <li class="item">Strawberry</li>
+      <li class="item">melon</li>
+    </ul>
+    <a id="google" href="https://www.google.com">Google</a>
 
     <script>
       let elementById = document.getElementById("selector");
-      console.log(`elementById : ${elementById}`);
+      // console.log(`elementById : ${elementById}`);
       elementById.innerHTML = "<b>Change selector</b>";
+
+      let titleByID = document.getElementById("title");
+      // titleByID.innerHTML = "Title By Id";
+
+      let listByclassName = document.getElementsByClassName("list");
+      // console.log(`${listByclassName}`);
+
+      let pByTagName = document.getElementsByTagName("p");
+      console.log(`${pByTagName}`);
+      // buttonByTagName.innerHTML = "클릭하세요";
+
+      let queryTitle = document.querySelector("#title");
+      // queryTitle.innerHTML = "query Title";
+
+      let queryItems = document.querySelectorAll(".item");
+      // queryItems.forEach((item, index) => {
+      //   console.log(item);
+      // });
+
+      let queryLists = document.querySelectorAll(".list");
+      let queryList = document.querySelector(".list");
     </script>
   </body>
 </html>
