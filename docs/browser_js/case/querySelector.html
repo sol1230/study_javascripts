@@ -35,19 +35,29 @@
 
       // 모든 .list와 .item 출력
       let queryList = document.querySelectorAll(".list");
-      queryList.forEach((lists) => {
-        console.log(`${lists}`);
+      queryList.forEach((item, index) => {
+        console.log(`${index} : ${item.outerHTML}`);
+        queryList[0].querySelectorAll(".item");
+        let queryItems = item.querySelectorAll(".item");
+        queryItems.forEach((item, index) => {
+          console.log(`${index} : ${item.outerHTML}`);
+        });
       });
 
-      let queryitem1 = queryList[0].querySelectorAll(".item");
-      queryitem1.forEach((item) => {
-        console.log(`${item}`);
-      });
+      //   let queryList = document.querySelectorAll(".list");
+      //   queryList.forEach((lists) => {
+      //     console.log(`${lists}`);
+      //   });
 
-      let queryitem2 = queryList[1].querySelectorAll(".item");
-      queryitem2.forEach((item) => {
-        console.log(`${item}`);
-      });
+      //   let queryitem1 = queryList[0].querySelectorAll(".item");
+      //   queryitem1.forEach((item) => {
+      //     console.log(`${item}`);
+      //   });
+
+      //   let queryitem2 = queryList[1].querySelectorAll(".item");
+      //   queryitem2.forEach((item) => {
+      //     console.log(`${item}`);
+      //   });
     </script>
   </body>
 </html>
