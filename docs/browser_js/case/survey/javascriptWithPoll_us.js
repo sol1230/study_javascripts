@@ -88,7 +88,6 @@ for (let idx = 0; idx < queAnsCnn.length; idx++) {
     question_a.push(queAnsCnn[idx]["answer_uid"]);
   }
   question_compare = queAnsCnn[idx]["question_uid"]; // 이전 uid 입력
-  //   question_a.push();
 }
-polls.push(question_a);
+polls.push(question_a); // Q5
 console.log(`${polls}`);
