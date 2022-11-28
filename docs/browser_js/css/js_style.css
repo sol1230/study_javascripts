@@ -1,0 +1,26 @@
+.image {
+  width: 150px;
+  height: 150px;
+}
+
+.color {
+  background-color: green;
+  color: white;
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+#remove,
+#hide,
+#resetAll {
+  border: 1px solid gray;
+  padding: 1rem;
+}

@@ -25,32 +25,16 @@
       <li class="item">melon</li>
     </ul>
     <a id="google" href="https://www.google.com">Google</a>
+    <div>
+      <input
+        type="text"
+        name="content"
+        id="contentId"
+        class="content-class"
+        value="Banana"
+      />
+    </div>
 
-    <script>
-      let elementById = document.getElementById("selector");
-      // console.log(`elementById : ${elementById}`);
-      elementById.innerHTML = "<b>Change selector</b>";
-
-      let titleByID = document.getElementById("title");
-      // titleByID.innerHTML = "Title By Id";
-
-      let listByclassName = document.getElementsByClassName("list");
-      // console.log(`${listByclassName}`);
-
-      let pByTagName = document.getElementsByTagName("p");
-      console.log(`${pByTagName}`);
-      // buttonByTagName.innerHTML = "클릭하세요";
-
-      let queryTitle = document.querySelector("#title");
-      // queryTitle.innerHTML = "query Title";
-
-      let queryItems = document.querySelectorAll(".item");
-      // queryItems.forEach((item, index) => {
-      //   console.log(item);
-      // });
-
-      let queryLists = document.querySelectorAll(".list");
-      let queryList = document.querySelector(".list");
-    </script>
+    <script src="./js/selectors.js"></script>
   </body>
 </html>

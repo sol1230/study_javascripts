@@ -175,7 +175,7 @@ function setPollContents() {
       // console.log(`${index + 1}. ${getAnswersByUid(answer_a)}`);
       desc =
         desc +
-        `<div><input type = "radio" name = "answer" "id = "${index}"><label for = "${index}">(${
+        `<div><input type = "radio" name = "answer" "id = "${index}" ><label for = "${index}">(${
           index + 1
         }). ${getAnswersByUid(answer_a)}</label></div>`;
     });
@@ -200,7 +200,7 @@ function setPollPrev() {
     polls[index - 2]["answer_uid"].forEach((answer_a, index) => {
       prev =
         prev +
-        `<div><input type = "radio" id = "${index}" name = "answer"><label for = "${index}">(${
+        `<div><input type = "radio" name = "answer" id = "${index}" ><label for = "${index}">(${
           index + 1
         }). ${getAnswersByUid(answer_a)}</label></div>`;
     });
