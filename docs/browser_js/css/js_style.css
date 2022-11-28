@@ -16,11 +16,11 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  justify-content: space-around;
 }
 #remove,
 #hide,
 #resetAll {
   border: 1px solid gray;
   padding: 1rem;
+  margin: 10px;
 }
